@@ -1,0 +1,93 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    padding: 43px 20px 30px 20px;
+    color: #ffffff;
+    border: 1px solid #d58c51;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    cursor: pointer;
+
+    &:hover .card__title {
+        transition: color 0.5s ease;
+        color: #d58c51;
+    }
+
+    &:hover .card__descr {
+        transition: color 0.5s ease;
+        color: #d58c51;
+    }
+
+    &:hover .card__info-wrap {
+        transition: color 0.5s ease;
+        color: #d58c51;
+    }
+
+    &__preview {
+        max-width: 270px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 120px;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    &__weight {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: #d58c51;
+            border: 1px solid transparent;
+        }
+    }
+}

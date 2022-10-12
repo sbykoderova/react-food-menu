@@ -1,0 +1,55 @@
+.basket {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    &__preview {
+        width: 122px;
+        height: auto;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &-value {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #d58c51;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 32px;
+        height: 32px;
+        font-size: 28px;
+        color: #d58c51;
+        background-color: transparent;
+        border: 1px solid #d58c51;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: #ffffff;
+            border: 1px solid transparent;
+        }
+    }
+}
